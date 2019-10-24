@@ -3,6 +3,8 @@ $(document).ready(function() {
 
     var animal = $("input:radio[name=animal]:checked").val();
 
+    event.preventDefault();
+
     $('.hide').hide();
 
     if (animal === "snake") {
@@ -20,8 +22,6 @@ $(document).ready(function() {
     if (animal === "whale") {
       $('#whale').show()
     }
-
-    event.preventDefault();
 
   });
 });
